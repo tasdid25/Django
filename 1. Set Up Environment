@@ -10,14 +10,18 @@ pip install django
 # Create Django Project
 django-admin startproject djangoproject
 cd djangoproject
-python manage.py runserver
 
-# ###################################################################################
 # Create Django App
 python manage.py startapp myapp
 
 # Add App to INSTALLED_APPS
 # Open djangoproject/settings.py and add 'myapp' to INSTALLED_APPS
+
+# ###################################################################################
+python manage.py runserver
+# to stop server ctrl+c 
+# ###################################################################################
+
 
 # Define Models
 # Create models in myapp/models.py
