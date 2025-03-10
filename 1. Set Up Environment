@@ -1,0 +1,44 @@
+# Set Up Environment
+mkdir myproject
+cd myproject
+python -m venv venv
+call venv\Scripts\activate  # Windows
+pip install django
+
+# Create Django Project
+django-admin startproject djangoproject
+cd djangoproject
+python manage.py runserver
+
+# Create Django App
+python manage.py startapp myapp
+
+# Add App to INSTALLED_APPS
+# Open djangoproject/settings.py and add 'myapp' to INSTALLED_APPS
+
+# Define Models
+# Create models in myapp/models.py
+
+# Run Migrations
+python manage.py makemigrations
+python manage.py migrate
+
+# Set Up Admin Panel
+python manage.py createsuperuser
+# Register models in myapp/admin.py
+# Create Views
+# Define views in myapp/views.py
+
+# Create Forms
+# Create forms in myapp/forms.py
+
+# Configure URLs
+# Define URLs in myapp/urls.py
+# Include app URLs in djangoproject/urls.py
+
+# Create Templates
+mkdir -p myapp/templates/myapp
+# Create HTML files in myapp/templates/myapp/
+
+# Test the App
+python manage.py runserver
