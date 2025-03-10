@@ -2,6 +2,7 @@
 mkdir myproject
 cd myproject
 code .
+# ###################################################################################
 python -m venv venv
 call venv\Scripts\activate  # Windows
 pip install django
