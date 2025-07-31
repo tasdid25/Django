@@ -51,3 +51,8 @@ mkdir -p myapp/templates/myapp
 
 # Test the App
 python manage.py runserver
+
+# Install package n save in requirement.txt file
+pip install django-crispy-forms
+pip freeze > requirements.txt
+
