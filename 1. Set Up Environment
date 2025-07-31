@@ -4,7 +4,9 @@ cd myproject
 code .
 # ###################################################################################
 python -m venv venv
-call venv\Scripts\activate  # Windows
+call venv\Scripts\activate  # Windows cmd    
+venv\Scripts\Activate.ps1   # windows powershell
+
 pip install django
 
 # Create Django Project
